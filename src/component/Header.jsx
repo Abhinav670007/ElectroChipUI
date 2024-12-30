@@ -19,7 +19,7 @@ function Header() {
       {/* Navigation Links for Desktop */}
       <nav className="hidden md:flex items-center space-x-6">
         <a
-          href="#home"
+          href="/"
           className="px-4 py-2 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-800 transition-all"
         >
           HOME
@@ -37,13 +37,14 @@ function Header() {
           SERVICE
         </a>
         <a
-          href="#blog"
+          href="/blog"
           className="text-black hover:text-purple-600 transition-all"
         >
           BLOG
         </a>
+        
         <a
-          href="#contact"
+          href="/contact"
           className="text-black hover:text-purple-600 transition-all"
         >
           CONTACT
