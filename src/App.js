@@ -5,6 +5,8 @@ import Header from './component/Header';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import Services from './pages/Services';
+import About from './pages/About';
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/blog' element={<Blog/>}/>
-        {/* <Route path='/' element={<Home/>}/> */}
+        <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/services' element={<Services/>}/>
         </Routes>
        
         <Footer/>

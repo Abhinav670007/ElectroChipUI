@@ -5,12 +5,12 @@ function Header() {
   return (
     <header className="bg-[#f4f4f9] p-4">
     <div className="container mx-auto flex items-center justify-around">
-      {/* Flex container for image and Electrochip text */}
+     
       <div className="flex items-center space-x-4">
         <img src="./images/logo.png" alt="Logo" className="h-12" />
         <div className="flex items-center">
           <div className="text-purple-600 text-3xl">
-            {/* <i className="fas fa-user-astronaut"></i> */}
+           
           </div>
           <h1 className="text-purple-600 font-bold text-xl ml-2">Electrochip</h1>
         </div>
@@ -25,13 +25,13 @@ function Header() {
           HOME
         </a>
         <a
-          href="#about"
+          href="/about"
           className="text-black hover:text-purple-600 transition-all"
         >
           ABOUT
         </a>
         <a
-          href="#services"
+          href="/services"
           className="text-black hover:text-purple-600 transition-all"
         >
           SERVICE
