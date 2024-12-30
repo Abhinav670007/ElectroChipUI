@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from '../pages/Contact';
 
 function Home() {
     const services = [
@@ -158,7 +159,7 @@ function Home() {
     </section>
                   {/* Blog Section      */}
 
-         <section className="bg-gray-50 py-12 px-6 md:px-16 mb-24">
+         <section className="py-12 px-6 md:px-16 mb-24">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <h2 className="text-3xl font-bold text-gray-800 mb-10 flex items-center justify-center">
@@ -190,7 +191,11 @@ function Home() {
           ))}
         </div>
       </div>
-    </section>        
+    </section>      
+
+    {/* Contact Section   */}
+
+          <Contact/>
 
     </div>
   )
