@@ -27,7 +27,7 @@ function Home() {
           <div className="relative">
   <div className="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-purple-600 ">
     <img
-      src="./images/slider-img.jpg" // Replace this with your image URL
+      src="./images/slider-img.jpg" 
       alt="Electrical Service"
       className="w-full h-full object-coverc"
     />

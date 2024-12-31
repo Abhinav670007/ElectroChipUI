@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const location = useLocation();  // Get the current location
+    const location = useLocation(); 
 
     const isActive = (path) => location.pathname === path ? 'bg-purple-600 text-white' : 'text-black hover:text-purple-600';
   return (
@@ -50,7 +50,7 @@ function Header() {
           </a>
         </nav>
 
-        {/* Mobile Menu Button (Hamburger Icon) */}
+       
         <div className="md:hidden flex items-center">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-purple-600 p-2">
             <i className={`fas fa-bars text-xl ${isMenuOpen ? 'rotate-90' : ''}`}></i>
@@ -58,16 +58,16 @@ function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu (Toggled by state) */}
+     
       {isMenuOpen && (
         <div className="md:hidden flex flex-col items-center space-y-4 mt-4">
           <a href="/" className={`px-4 py-2 rounded-full font-medium hover:bg-purple-800 transition-all ${isActive('/')}`}>
             HOME
           </a>
-          <a href="/about" className={`rounded-full text-black hover:text-purple-600 transition-all ${isActive('/about')}`}>ABOUT</a>
-          <a href="/services" className={`rounded-full text-black hover:text-purple-600 transition-all ${isActive('/services')}`}>SERVICE</a>
-          <a href="/blog" className={`rounded-full text-black hover:text-purple-600 transition-all ${isActive('/blog')}`}>BLOG</a>
-          <a href="/contact" className={`rounded-full text-black hover:text-purple-600 transition-all ${isActive('/contact')}`}>CONTACT</a>
+          <a href="/about" className={`px-4 py-2 rounded-full text-black hover:text-purple-600 transition-all ${isActive('/about')}`}>ABOUT</a>
+          <a href="/services" className={`px-4 py-2 rounded-full text-black hover:text-purple-600 transition-all ${isActive('/services')}`}>SERVICE</a>
+          <a href="/blog" className={`px-4 py-2 rounded-full text-black hover:text-purple-600 transition-all ${isActive('/blog')}`}>BLOG</a>
+          <a href="/contact" className={`px-4 py-2 rounded-full text-black hover:text-purple-600 transition-all ${isActive('/contact')}`}>CONTACT</a>
         </div>
       )}
     </header>
