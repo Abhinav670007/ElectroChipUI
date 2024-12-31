@@ -9,7 +9,7 @@ function About() {
           <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center justify-center md:justify-start md:gap-2">
             About Us  <img src="./images/plug.png" alt="Plug Icon" className="w-8 h-8" />
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className="text-gray-600 leading-relaxed mb-6 text-lg text-semibold">
             It is important to take care of the patient, the patient will be
             followed by the patient, but at the same time it will happen that
             there is a lot of work and pain. For to come to the smallest detail,
@@ -31,7 +31,7 @@ function About() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="relative w-40 h-40 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-purple-600">
+          <div className="relative w-40 h-40 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-purple-600 md:ml-48">
             <img
               src="./images/about-img2.jpg"
               alt="Worker 2"

@@ -25,23 +25,26 @@ function Home() {
     
           {/* Image Section */}
           <div className="relative">
-            <div className="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-purple-600">
-              <img
-                src="./images/slider-img.jpg" // Replace this with your image URL
-                alt="Electrical Service"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            {/* Navigation Buttons */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              <button className="bg-white w-8 h-8 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-200">
-                <span className="text-purple-700">&lt;</span>
-              </button>
-              <button className="bg-purple-700 w-8 h-8 rounded-full flex items-center justify-center shadow-lg hover:bg-purple-600">
-                <span className="text-white">&gt;</span>
-              </button>
-            </div>
-          </div>
+  <div className="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-purple-600 ">
+    <img
+      src="./images/slider-img.jpg" // Replace this with your image URL
+      alt="Electrical Service"
+      className="w-full h-full object-coverc"
+    />
+  </div>
+  {/* Navigation Buttons */}
+  <div className="absolute bottom-0 right-16 transform translate-x-[-50%] translate-y-[50%] flex space-x-2">
+    <button className="bg-white w-8 h-8 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-200 md:mb-5">
+      <span className="text-purple-700">&lt;</span>
+    </button>
+  </div>
+  <div className="absolute bottom-0 right-8 transform translate-x-[-50%] translate-y-[50%] flex space-x-2 mb-2 md:mb-12">
+        <button className="bg-purple-700 w-8 h-8 rounded-full flex items-center justify-center shadow-lg hover:bg-purple-600 md:mb-1">
+      <span className="text-white">&gt;</span>
+    </button>
+  </div>
+</div>
+
         </div>
 
    
